@@ -67,7 +67,7 @@
                             </div>
                             <form action="">
                                 <div class="row mt-5">
-                                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3">
                                         <label for="qualification" class="form-label">คุณวุฒิวิชาชีพ</label>
                                         <select id="qualification" class="form-select">
                                             <option selected disabled>--กรุณาเลือก--</option>
@@ -76,7 +76,7 @@
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3">
                                         <label for="branch" class="form-label">สาขา</label>
                                         <select id="branch" class="form-select">
                                             <option selected disabled>--กรุณาเลือก--</option>
@@ -85,7 +85,7 @@
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
-                                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3">
                                         <label for="occupation" class="form-label">อาชีพ</label>
                                         <select id="occupation" class="form-select">
                                             <option selected disabled>--กรุณาเลือก--</option>
@@ -94,9 +94,7 @@
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="row mt-5">
-                                    <div class="col-12 col-md-6 col-lg-2 mb-3">
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3">
                                         <label for="qualification" class="form-label">ระดับ</label>
                                         <select id="qualification" class="form-select">
                                             <option selected disabled>--กรุณาเลือก--</option>
@@ -105,8 +103,11 @@
                                             <option value="3">Three</option>
                                         </select>
                                     </div>
+                                </div>
+                                <div class="row mt-5">
+                                    
                                     <div class="col-12 col-md-6 col-lg-2 mb-3">
-                                        <label for="branch" class="form-label">Type File</label>
+                                        <label for="branch" class="form-label">ประเภทไฟล์</label>
                                         <select id="branch" class="form-select">
                                             <option selected disabled>--กรุณาเลือก--</option>
                                             <option value="1">One</option>
@@ -115,7 +116,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-2 mb-3">
-                                        <label for="date" class="form-label">วันที่</label>
+                                        <label for="date" class="form-label">วันที่นำเข้า</label>
                                         <input type="date" id="date" class="form-control">
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-2 mb-3 margin__top___date">
@@ -125,7 +126,7 @@
                                         <button class="submit__button__style"><i class="ri-search-line"></i><input class="submit__button" type="submit" value="ค้นหา"></button>
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-2 mb-3 margin__top___date ">
-                                        <button type="button" class="upload__button__style" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="ri-upload-2-fill"></i> Upload File</button>
+                                        <button type="button" class="upload__button__style" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="ri-upload-2-fill"></i> อัพโหลดไฟล์</button>
                                         <div class="modal fade" id="exampleModal" tabindex="-1" >
                                             <div class="modal-dialog">
                                               <div class="modal-content">
@@ -343,10 +344,23 @@
                                 </div>
                             </form>
                             <hr class="mt-3">
+                           
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8">
+
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                         <label for="search">ค้นหา</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="table-responsive">
                                 <table class="custom-table">
                                     <thead>
-                                        <tr>3
+                                        <tr>
                                             <th>ลำดับ</th>
                                             <th>คุณวุฒิวิชาชีพ</th>
                                             <th>สาขา</th>
