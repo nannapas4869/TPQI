@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -16,30 +18,75 @@
 <body>
     <nav class="nav-bar">
         <div class="container-fluid">
+            <hr class="scc__hr"/>
+            <p class="scc__title">Notification Setting</p>
+        </div>
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8 col-lg-8 mt-3">
-                     <img src="/images/new_logo2.png" alt="logo" class="ms-4">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead class="scc__skyblue__header text-white">
+                          <tr>
+                            <th class="text-center">Events</th>
+                            <th class="text-center">Receiver</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td  class="text-center">เจ้าหน้าที่สอบ ขอเอสารเพิ่มเติม</td>
+                            <td class="text-center">ผู้เข้ารับการประเมิน (Email)</td>
+                            <td class="text-center"><img src="/images/check.png" alt="check" class="status-icon" style="cursor: pointer;  width: 20px; height: 20px;"></td>
+                            <td class="text-center"><img src="/images/edit.png" alt="edit"></td>
+                          </tr>
+                          <tr>
+                            <td  class="text-center">แจ้งข้อมูลการเข้าใช้งาน</td>
+                            <td class="text-center">แจ้งข้อมูลการเข้าใช้งาน</td>
+                            <td class="text-center"><img src="/images/check.png" alt="check" class="status-icon" style="cursor: pointer;  width: 20px; height: 20px;"></td>
+                            <td class="text-center"><img src="/images/edit.png" alt="edit"></td>
+                          </tr>
+                        </tbody>
+                      </table>
                 </div>
-                <div class="col-md-4 col-lg-4 margin__top__admin___align">
-                    <div class="d-flex flex-row justify-content-end align-items-center me-3">
-                        <p class="admin__welcome__text me-4">ยินดีต้อนรับ <span class="admin__red__text">Administrator</span></p>
-                        <button class="button_logout__background">
-                            <i class="ri-logout-box-r-line"></i> ออกจากระบบ
-                        </button>
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <p class="scc__order__page">All <span class="scc__red__color">2</span> Orders</p>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-6">
+                        <div class="d-flex justify-content-center gap-3">
+                            <button class="scc__button__save"><img src="/images/save.png" alt="save"> Save</button>
+                            <button class="scc__button__cancel"><img src="/images/cancel.png" alt="cancel"> Cancel</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <div class="d-flex flex-row justify-content-end">
+                            <p class="scc__previous__next">Previous</p>
+                            <div class="scc__background__active__page">
+                                <p class="scc__page__number">1</p>
+                            </div>
+                            <p class="scc__previous__next">Next</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 col-lg-12 mt-5 px-5">
-                    <div class="width__height__tab">
-                        <div class="d-flex flex-row justify-content-start">
-                           
-                        </div>
-                    </div>    
-                </div>
-                
-            </div>
         </div>
     </nav>
+    <script>
+        $(document).ready(function () {
+    $(".status-icon").on("click", function () {
+      const currentImg = $(this);
+
+      // Use a ternary operator to toggle the image source
+      currentImg.attr(
+        "src",
+        currentImg.attr("src").includes("check.png")
+          ? "/images/incorrect.png"
+          : "/images/check.png"
+      );
+    });
+  });
+
+    </script>
 </body>
 </html>
