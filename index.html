@@ -1,94 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
-    <link rel="stylesheet" href="/css/custom.css">
-
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>DIGITAL EXAM CENTER</title>
-</head>
-
-   
-<body>
-    <nav class="nav-bar">
-        <div class="container-fluid">
-            <hr class="scc__hr" />
-            <p class="scc__title">Notification Setting</p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <table class="table table-bordered">
-                        <thead class="scc__skyblue__header text-white">
-                            <tr>
-                                <th class="text-center">Events</th>
-                                <th class="text-center">Receiver</th>
-                                <th class="text-center">Status</th>
-                                <th class="text-center">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-center">เจ้าหน้าที่สอบ ขอเอสารเพิ่มเติม</td>
-                                <td class="text-center">ผู้เข้ารับการประเมิน (Email)</td>
-                                <td class="text-center">
-                                    <img src="/images/check.png" alt="check" class="status-icon" style="cursor: pointer; width: 20px; height: 20px;" />
-                                </td>
-                                <td class="text-center">
-                                    <img src="/images/edit.png" alt="edit" />
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">แจ้งข้อมูลการเข้าใช้งาน</td>
-                                <td class="text-center">แจ้งข้อมูลการเข้าใช้งาน</td>
-                                <td class="text-center">
-                                    <img src="/images/check.png" alt="check" class="status-icon" style="cursor: pointer; width: 20px; height: 20px;" />
-                                </td>
-                                <td class="text-center">
-                                    <img src="/images/edit.png" alt="edit" />
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-12 col-lg-12">
+          <div class="container-fluid">
+            <div class="col-12 col-md-12 col-lg-12">
+              <div class="scc__top__tab">
+                <div class="d-flex align-items-center">
+                  <p class="scc__margin__bottom__p">
+                    <img
+                      src="/images/evaluation.png"
+                      alt="evaluation"
+                      width="20"
+                      class="me-3"
+                    />เครื่องมือประเมิน
+                  </p>
+                  <p class="scc__margin__bottom__p">
+                    <img
+                      src="/images/setting.png"
+                      alt="setting"
+                      width="20"
+                      class="ms-3 me-3"
+                    />
+                    ตั้งค่า
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                    <p class="scc__order__page">All <span class="scc__red__color">2</span> Orders</p>
-                </div>
-                <div class="col-12 col-md-4 col-lg-6">
-                    <div class="d-flex justify-content-center gap-3">
-                        <button class="scc__button__save">
-                            <img src="/images/save.png" alt="save" /> Save
-                        </button>
-                        <button class="scc__button__cancel">
-                            <img src="/images/cancel.png" alt="cancel" /> Cancel
-                        </button>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <div class="d-flex flex-row justify-content-end">
-                        <p class="scc__previous__next">Previous</p>
-                        <div class="scc__background__active__page">
-                            <p class="scc__page__number">1</p>
-                        </div>
-                        <p class="scc__previous__next">Next</p>
-                    </div>
-                </div>
-            </div> <!-- Missing closing tag added here -->
+          </div>
         </div>
-    </nav>
-    
-                
-</body>
+      </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                  <div class="d-flex flex-row justify-content-between">
+                    <p class="evaluate__online__left">การประเมินผลแบบออนไลน์</p>
+                    <p class="evaluate__online__right">สรุปผลการประเมิน</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="scc__bg__white">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-12 col-md-3 col-lg-3">
+                                  <div class="mb-3">
+                                    <label for="qualification" class="form-label">คุณวุฒิวิชาชีพ</label>
+                                    <select class="form-select">
+                                      <option selected disabled>--กรุณาเลือก--</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2">
+                                  <div class="mb-3">
+                                    <label for="level" class="form-label">ระดับ</label>
+                                    <select class="form-select">
+                                      <option selected disabled>--กรุณาเลือก--</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2">
+                                  <div class="mb-3">
+                                    <label for="evaluation" class="form-label">เครื่องมือประเมิน</label>
+                                    <select class="form-select">
+                                      <option selected disabled>--กรุณาเลือก--</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2">
+                                  <div class="mb-3">
+                                    <label for="status" class="form-label">สถานะ</label>
+                                    <select class="form-select">
+                                      <option selected disabled>--กรุณาเลือก--</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-12 col-md-3 col-lg-3">
+                                  <div class="mb-3 d-flex flex-row gap-3 scc__margin__top__button">
+                                     <button class="scc__search__button"><img src="/images/search.png" alt="search"> ค้นหา</button>
+                                     <button class="scc__reset__button"><img src="/images/reset.png" alt="reset"> ล้างค่า</button>
+                                  </div>
+                                </div>
+                            </div>
+                            <hr class="scc__hr__gray__line">
+                            <div class="row">
+                              <div class="col-12 col-md-8 col-lg-8"></div>
+                              <div class="col-12 col-mg-4 col-lg-4">
+                                <label for="search" class="form-label">ค้นหา</label>
+                                <input type="search" class="form-control" id="search" placeholder="ค้นหา">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 col-md-12 col-lg-12">
+                                <div class="scc__table__container">
+                                  <table class="scc__table">
+                                    <thead>
+                                      <tr>
+                                        <th class="text-center scc__th">ลำดับ</th>
+                                        <th class="text-center scc__th">รอบสอบ</th>
+                                        <th class="text-center scc__th">องค์กรรับรอง</th>
+                                        <th class="text-center scc__th">คุณวุฒิวิชาชีพ/สาขา</th>
+                                        <th class="text-center scc__th">อาชีพ</th>
+                                        <th class="text-center scc__th">ระดับ</th>
+                                        <th class="text-center scc__th">เครื่องมือประเมิน</th>
+                                        <th class="text-center scc__th">สถานที่จัดสอบ</th>
+                                        <th class="text-center scc__th">วันที่จัดสอบ</th>
+                                        <th class="text-center scc__th">วันที่ประเมิน</th>
+                                        <th class="text-center scc__th">เข้าประเมินผล</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="scc__td text-center">
+                                          1
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          65/08/0142
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สมาคมตัวแทนออกของรับอนุญาตไทย
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สาขาวิชาชีพโลจิสติกส์สาขาจัดการส่งออก และนำเข้า
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ผู้ปฏิบัติงานส่งออก - นำเข้า 
+(ผู้ปฏิบัติงานธุรการส่งออก-นำเข้า)
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ระดับ 2
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          เทียบโอนประสบการณ์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          มหาวิทยาลัยราชภัฎเลย
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          3 ก.ย. 2565 10.30 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          13 ก.ย. 2565 11.00 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          <img src="/images/edit_big.png" alt="edit_big">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="scc__td text-center">
+                                          2
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          65/07/0021
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          บริษัท รักษาความปลอดภัย เอเซีย คลีนนิ่ง เซอร์วิส จำกัด
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สาขาวิชาชีพธุรกิจบริการ
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          แม่บ้าน
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ระดับ 1
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          เทียบโอนประสบการณ์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ศูนย์ปฏิบัติการ บริษัท รักษาความปลอดภัย เอเชียคลีนนิ่งเซอร์วิส จำกัด
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          10 ก.ค. 2565 13.30 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          21 ก.ค. 2565 13.15 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          <img src="/images/edit_big.png" alt="edit_big">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="scc__td text-center">
+                                          3
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          65/07/0021
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          บริษัท รักษาความปลอดภัย เอเซีย คลีนนิ่ง เซอร์วิส จำกัด
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สาขาวิชาชีพธุรกิจบริการ
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          แม่บ้าน
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ระดับ 1
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          เทียบโอนประสบการณ์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ศูนย์ปฏิบัติการ บริษัท รักษาความปลอดภัย เอเชียคลีนนิ่งเซอร์วิส จำกัด
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          10 ก.ค. 2565 09.00 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          21 ก.ค. 2565 10.30 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          <img src="/images/edit_big.png" alt="edit_big">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="scc__td text-center">
+                                          4
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          65/01/0033
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สาขาวิชาชีพเกษตรกรรม สาขาเพาะปลูกพืชเศรษฐกิจ
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ผู้ปฏิบัติงานด้านเก็บเกี่ยวผลผลิตยางพารา
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ระดับ 3
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          เทียบโอนประสบการณ์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          คณะทรัพยากรธรรมชาติ มหาวิทยาลัยสงขลานครรินทร์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          23 ม.ค. 2565 14.00 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          4 ก.พ. 2565 14.28 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          <img src="/images/edit_big.png" alt="edit_big">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="scc__td text-center">
+                                          5
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          65/01/0033
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สาขาวิชาชีพเกษตรกรรม สาขาเพาะปลูกพืชเศรษฐกิจ
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ผู้ปฏิบัติงานด้านเก็บเกี่ยวผลผลิตยางพารา
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ระดับ 3
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          เทียบโอนประสบการณ์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          คณะทรัพยากรธรรมชาติ มหาวิทยาลัยสงขลานครรินทร์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          23 ม.ค. 2565 14.00 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          4 ก.พ. 2565 14.28 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          <img src="/images/edit_big.png" alt="edit_big">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="scc__td text-center">
+                                          6
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          65/01/0032
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สาขาวิชาชีพเกษตรกรรม สาขาเพาะปลูกพืชเศรษฐกิจ
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ผู้ปฏิบัติงานด้านเก็บเกี่ยวผลผลิตยางพารา
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ระดับ 3
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          เทียบโอนประสบการณ์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          คณะทรัพยากรธรรมชาติ มหาวิทยาลัยสงขลานครรินทร์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          22 ม.ค. 2565 14.00 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          2 ก.พ. 2565 14.28 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          <img src="/images/edit_big.png" alt="edit_big">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="scc__td text-center">
+                                          7
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          65/01/0032
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สาขาวิชาชีพเกษตรกรรม สาขาเพาะปลูกพืชเศรษฐกิจ
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ผู้ปฏิบัติงานด้านเก็บเกี่ยวผลผลิตยางพารา
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ระดับ 3
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          เทียบโอนประสบการณ์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          คณะทรัพยากรธรรมชาติ มหาวิทยาลัยสงขลานครรินทร์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          22 ม.ค. 2565 14.00 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          2 ก.พ. 2565 14.28 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          <img src="/images/edit_big.png" alt="edit_big">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="scc__td text-center">
+                                          8
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          65/01/0032
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สมาคมโรงเรียนเสริมสวยและตัดเย็บเสื้อผ้า
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สาขาวิชาชีพธุรกิจเสริมสวยและเสริมสร้างสุขภาพร่างกาย
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ช่างทำผมบุรุษ
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          ระดับ 4
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          เทียบโอนประสบการณ์
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          สวนนงนุช
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          7 ธ.ค. 2565 13.00 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          22 ม.ค. 2565 09.53 น.
+                                        </td>
+                                        <td class="scc__td text-center">
+                                          <img src="/images/edit_big.png" alt="edit_big">
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              
+                                </div>
+                                <div id="pagination" class="pagination"></div>
+                                <div class="d-flex flex-row justify-content-between mt-3">
+                                  <p>ทั้งหมด <span class="scc__red__number__item">8</span> รายการ</p>
+                                  <div class="d-flex flex-row gap-5">
+                                    <p class="cursor-pointer">ก่อนหน้า</p>
+                                    <p class="scc__number">1</p>
+                                    <p class="cursor-pointer">ถัดไป</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+const rowsPerPage = 8; // Number of rows per page
+let currentPage = 1; // Default page is 1
+
+function displayTable(page) {
+    const table = document.querySelector('.scc__table tbody');
+    const rows = Array.from(table.querySelectorAll('tr'));
+    const totalRows = rows.length;
+
+    const start = (page - 1) * rowsPerPage;
+    const end = start + rowsPerPage;
+
+    rows.forEach((row, index) => {
+        row.style.display = index >= start && index < end ? '' : 'none';
+    });
+
+    // Update total rows and current page number
+    document.querySelector('.scc__red__number__item').textContent = totalRows;
+    updatePagination(page, Math.ceil(totalRows / rowsPerPage));
+}
+
+function updatePagination(currentPage, totalPages) {
+    const pagination = document.getElementById('page-numbers');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+
+    pagination.innerHTML = '';
+
+    // Generate page number buttons
+    for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement('p');
+        pageButton.textContent = i;
+        pageButton.classList.add('cursor-pointer');
+        if (i === currentPage) {
+            pageButton.classList.add('active'); // Highlight the current page
+        }
+        pageButton.addEventListener('click', () => {
+            currentPage = i;
+            displayTable(currentPage);
+        });
+        pagination.appendChild(pageButton);
+    }
+
+    // Show or hide "ก่อนหน้า" button
+    prev.style.visibility = currentPage > 1 ? 'visible' : 'hidden';
+    prev.onclick = () => {
+        if (currentPage > 1) {
+            currentPage--;
+            displayTable(currentPage);
+        }
+    };
+
+    // Show or hide "ถัดไป" button
+    next.style.visibility = currentPage < totalPages ? 'visible' : 'hidden';
+    next.onclick = () => {
+        if (currentPage < totalPages) {
+            currentPage++;
+            displayTable(currentPage);
+        }
+    };
+}
+
+// Initialize table display and pagination
+displayTable(currentPage);
+
+  </script>
+  
+  </body>
 </html>
